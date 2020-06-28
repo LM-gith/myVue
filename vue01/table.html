@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="item in message">{{item}}</li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    var mv = new  Vue({
+        el:'#app',
+        data:{
+            message:['111','222','333','444']
+        }
+    })
+</script>
+</body>
+</html>

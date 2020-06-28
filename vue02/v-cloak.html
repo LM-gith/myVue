@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1 v-cloak>{{message}}</h1>
+
+</div>
+
+<script type="text/javascript">
+
+    /*解析之前v-cloak存在*/
+    /*解析之后v-cloak不存在*/
+    setTimeout(() => {
+        var mv = new Vue({
+            el: '#app',
+            data: {
+                message: '11111'
+            }
+        })
+    },  1000)
+
+</script>
+</body>
+</html>

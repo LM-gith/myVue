@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--v-if 为false时，元素不会存在dom中；v-show为false时，只是加了样式display：none-->
+    <lable>登录：</lable>
+    <span v-if="isUser">
+        <!--key 可以阻止元素复用-->
+        <input type="text" id="name" placeholder="用户账号" key="name">
+    </span>
+    <span v-else>
+        <input type="text" id="email" placeholder="用户邮箱">
+    </span>
+    <button @click="isUser = !isUser">切换</button>
+</div>
+
+<script type="text/javascript">
+    var mv = new  Vue({
+        el:'#app',
+        data:{
+            isUser : true
+        }
+    })
+</script>
+</body>
+</html>

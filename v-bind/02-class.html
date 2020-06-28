@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <style>
+        .active{
+            color : red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1 class="title" v-bind:class="{active : isActive}">11111</h1>
+    <h1 class="title" v-bind:class="getClass1()">11111</h1>
+    <h1 class="title" v-bind:class="getClass2()">11111</h1>
+    <button @click="btnClick">变色</button>
+</div>
+
+<script type="text/javascript">
+    var mv = new  Vue({
+        el:'#app',
+        data:{
+            isActive : true
+        },
+        methods : {
+            btnClick : function () {
+                this.isActive = !this.isActive;
+            },
+            getClass1 : function () {
+                return {active : this.isActive};
+            },
+            getClass2 : function () {
+                return ['active'];
+            }
+        }
+    })
+</script>
+</body>
+</html>

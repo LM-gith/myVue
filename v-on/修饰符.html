@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <!--.stop阻止事件冒泡  .prevent阻止默认事件  keyup.enter监听键盘enter抬起 .once只触发一次事件-->
+    <div @click="btn1">
+        <button @click.stop="btn2">按钮2</button>
+    </div>
+
+
+</div>
+
+<script type="text/javascript">
+    var mv = new  Vue({
+        el:'#app',
+        data:{
+
+        },
+        methods : {
+            btn1 : function () {
+                console.log('按钮1');
+            },
+            btn2 : function () {
+                console.log('按钮2');
+            },
+            btn3 : function (abc) {
+                console.log(abc);
+            },
+            btn4 : function (abc,even) {
+                console.log(abc,even);
+            },
+        }
+    })
+</script>
+</body>
+</html>

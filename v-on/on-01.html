@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="btn1">按钮1</button>
+    <button @click="btn2">按钮2</button>
+
+    <!--不传参数，而方法又用参数，会某人传入事件even参数-->
+    <button @click="btn3">按钮3</button>
+
+    <!--$获取浏览器参数对象 -->
+    <button @click="btn4(123,$event)">按钮4</button>
+    <button>按钮5</button>
+    <button>按钮6</button>
+</div>
+
+<script type="text/javascript">
+    var mv = new  Vue({
+        el:'#app',
+        data:{
+
+        },
+        methods : {
+            btn1 : function () {
+                console.log('按钮1');
+            },
+            btn2 : function () {
+                console.log('按钮2');
+            },
+            btn3 : function (abc) {
+                console.log(abc);
+            },
+            btn4 : function (abc,even) {
+                console.log(abc,even);
+            },
+        }
+    })
+</script>
+</body>
+</html>

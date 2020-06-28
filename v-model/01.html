@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="message">
+    <input type="text" :value="message" @input="message = $event.target.value">
+    <h1>{{message}}</h1>
+
+</div>
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript">
+    var mv = new  Vue({
+        el:'#app',
+        data:{
+            message : '爽啊'
+        }
+    })
+</script>
+</html>

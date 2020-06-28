@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--mustache语法，可以直接写变量，也写简单的表达式-->
+    <h1>{{firstName}} {{lastName}}</h1>
+    <h1>{{firstName + ' ' + lastName}}</h1>
+    <h1>{{lastName * 2}}</h1>
+    <h1></h1>
+</div>
+
+
+<script type="text/javascript">
+    var mv = new  Vue({
+        el : '#app',
+        data : {
+            firstName : '李',
+            lastName : 4
+        }
+
+    })
+</script>
+</body>
+</html>

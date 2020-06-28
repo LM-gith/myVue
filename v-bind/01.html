@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <img v-bind:src="imgurl" alt="">
+    <a :href="hrefurl">百度一下</a>
+</div>
+
+<script type="text/javascript">
+    var mv = new  Vue({
+        el:'#app',
+        data:{
+            imgurl : 'https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3082382187,3884031366&fm=85&app=92&f=JPEG?w=121&h=75&s=1AE3C81200BA73A5320622C2030070AB',
+            hrefurl : 'http://www.baidu.com'
+        }
+    })
+</script>
+</body>
+</html>
