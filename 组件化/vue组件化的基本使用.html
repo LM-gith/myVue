@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div>
+        <h2>标题原</h2>
+        <p>11111</p>
+        <p>22222</p>
+    </div>
+    <mycpn></mycpn>
+    <cpn></cpn>
+</div>
+<div id="app2">
+    <mycpn></mycpn>
+</div>
+<script type="text/javascript">
+
+    //构造组件
+    let comp1 = Vue.extend({
+        template: `
+            <div>
+                <h2>comp1</h2>
+                <p>33333</p>
+                <p>44444</p>
+            </div>`
+    })
+
+    let comp2 = Vue.extend({
+        template: `
+            <div>
+                <h2>comp2</h2>
+                <p>55555</p>
+                <p>66666</p>
+            </div>`
+    })
+
+    //注册组件
+    Vue.component('mycpn',comp1)//全局
+
+    let mv = new  Vue({
+        el:'#app',
+        data: {
+
+        },
+        components: {
+            cpn: comp2
+        }
+    })
+
+    let mv2 = new Vue({
+        el: '#app2'
+    })
+</script>
+</body>
+</html>
