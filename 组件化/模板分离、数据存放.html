@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <cpn1></cpn1>
+    <cpn2></cpn2>
+</div>
+<script type="text/x-template" id="temp1">
+    <h1>text/x-template</h1>
+</script>
+<template id="temp2">
+    <div>
+        <h1>template</h1>
+        <h2>{{title}}</h2>
+    </div>
+</template>
+
+<script type="text/javascript">
+    Vue.component('cpn1',{
+        template: "#temp1"
+    })
+
+    Vue.component('cpn2',{
+        template: "#temp2",
+        data() {
+            return {
+                title: '标题'
+            }
+        }
+    })
+    let mv = new  Vue({
+        el:'#app',
+        data:{
+
+        }
+    })
+</script>
+</body>
+</html>

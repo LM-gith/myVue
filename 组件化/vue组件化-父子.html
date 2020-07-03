@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <cpn></cpn>
+</div>
+
+<script type="text/javascript">
+
+    //构造组件
+    let comp1 = Vue.extend({
+        template: `
+            <div>
+                <h2>子</h2>
+                <p>33333</p>
+                <p>44444</p>
+            </div>`
+    })
+
+    let comp2 = Vue.extend({
+        template: `
+            <div>
+                <h2>父</h2>
+                <p>33333</p>
+                <p>44444</p>
+                <cpn></cpn>
+            </div>`,
+        components: {
+            cpn: comp1
+        }
+    })
+
+    let mv = new  Vue({
+        el:'#app',
+        components: {
+            cpn: comp2
+        }
+    })
+</script>
+</body>
+</html>

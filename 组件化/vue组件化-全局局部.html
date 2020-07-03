@@ -9,14 +9,13 @@
 <div id="app">
     <div>
         <h2>标题原</h2>
-        <p>11111</p>
-        <p>22222</p>
     </div>
-    <mycpn></mycpn>
-    <cpn></cpn>
+    <mycpn1></mycpn1>
+    <cpn1></cpn1>
+    <cpn2></cpn2>
 </div>
 <div id="app2">
-    <mycpn></mycpn>
+    <mycpn2></mycpn2>
 </div>
 <script type="text/javascript">
 
@@ -24,23 +23,25 @@
     let comp1 = Vue.extend({
         template: `
             <div>
-                <h2>comp1</h2>
-                <p>33333</p>
-                <p>44444</p>
+                <h2>全局1</h2>
             </div>`
     })
 
     let comp2 = Vue.extend({
         template: `
             <div>
-                <h2>comp2</h2>
-                <p>55555</p>
-                <p>66666</p>
+                <h2>局部1</h2>
             </div>`
     })
 
     //注册组件
-    Vue.component('mycpn',comp1)//全局
+    Vue.component('mycpn1',comp1)//全局1
+    Vue.component('mycpn2',{
+        template: `
+            <div>
+                <h2>全局2</h2>
+            </div>`
+    })
 
     let mv = new  Vue({
         el:'#app',
@@ -48,7 +49,13 @@
 
         },
         components: {
-            cpn: comp2
+            cpn1: comp2,
+            cpn2: {
+                template: `
+                    <div>
+                        <h2>局部2</h2>
+                    </div>`
+            }
         }
     })
 

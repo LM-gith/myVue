@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <cpn></cpn>
+</div>
+<template id="temp">
+    <div>
+        <button @click="decrement">-</button>
+        <p>{{num}}</p>
+        <button @click="increment">+</button>
+    </div>
+</template>
+
+
+<script type="text/javascript">
+    Vue.component('cpn',{
+        template: '#temp',
+        data() {
+            return {
+                num: 1
+            };
+        },
+        methods: {
+            increment() {
+                this.num++
+            },
+            decrement() {
+                this.num--
+            }
+        }
+
+    })
+
+    let mv = new  Vue({
+        el:'#app',
+        data:{
+
+        }
+    })
+</script>
+</body>
+</html>

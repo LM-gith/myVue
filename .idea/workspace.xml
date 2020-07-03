@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8df44fda-fc07-47db-b005-03115e8083f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/组件化/vue组件化的基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/组件化/practice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/组件化/vue组件化-父子.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/组件化/模板分离、数据存放.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/组件化/父子组件通信-子传父.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/组件化/父子组件通信-父传子.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue01/muban.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue01/muban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/组件化/vue组件化的基本使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/组件化/vue组件化-全局局部.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/组件化" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -42,6 +45,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\software\document\workspace\my vue\组件化" />
       <recent name="E:\software\document\workspace\my vue\js" />
     </key>
   </component>
@@ -112,7 +116,8 @@
       <workItem from="1590032054297" duration="37687000" />
       <workItem from="1593304551754" duration="260000" />
       <workItem from="1593304826781" duration="4992000" />
-      <workItem from="1593685146828" duration="465000" />
+      <workItem from="1593685146828" duration="5292000" />
+      <workItem from="1593760298804" duration="8402000" />
     </task>
     <servers />
   </component>
