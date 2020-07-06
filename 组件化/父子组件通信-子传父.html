@@ -7,38 +7,26 @@
 </head>
 <body>
 <div id="app">
-    <cpn1 :cmovie="movies"></cpn1>
-    <cpn2 :c-movies="movies"></cpn2>
+    <cpn @mv-click="itemClick"></cpn>
+    <div>{{item}}</div>
 </div>
 <template id="temp">
     <div>
-        <ul v-for="item in cmovie">
-            <li>{{item}}</li>
-        </ul>
-    </div>
-</template>
-
-<template id="temp2">
-    <div>
-        <ul v-for="item in cMovies">
-            <li>{{item}}</li>
-        </ul>
+        <button v-for="item in movies" @click="btnClick(item)">{{item}}</button>
     </div>
 </template>
 <script type="text/javascript">
-    const cpn1 = {
+    const cpn = {
         template: '#temp',
-        props: ['cmovie']
-    }
-
-    const cpn2 = {
-        template: '#temp2',
-        props: {
-            cMovies: {
-                type: Array,
-                default() {
-                    return []
-                }
+        data() {
+            return {
+                movies: ['大鱼海棠','齐天大圣','哪吒闹海','风语咒','天书奇谈']
+            }
+        },
+        methods: {
+            btnClick(item) {
+                //自定义事件
+                this.$emit("mv-click",item);
             }
         }
     }
@@ -46,11 +34,15 @@
     let mv = new  Vue({
         el: '#app',
         data: {
-            movies: ['大鱼海棠','齐天大圣','哪吒闹海','风语咒','天书奇谈']
+            item: '大鱼海棠'
+        },
+        methods: {
+            itemClick(item) {
+                this.item = item;
+            }
         },
         components: {
-            cpn1: cpn1,
-            cpn2: cpn2
+            cpn: cpn
         }
     })
 </script>
