@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8df44fda-fc07-47db-b005-03115e8083f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/组件化/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/组件化/父访问子-children、refs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/组件化/父子组件通信-子传父.html" beforeDir="false" afterPath="$PROJECT_DIR$/组件化/父子组件通信-子传父.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,6 +113,8 @@
       <workItem from="1593304826781" duration="4992000" />
       <workItem from="1593685146828" duration="5292000" />
       <workItem from="1593760298804" duration="18186000" />
+      <workItem from="1594005233095" duration="1737000" />
+      <workItem from="1594018887929" duration="2516000" />
     </task>
     <servers />
   </component>

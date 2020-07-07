@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <cpn ref="LM"></cpn>
+    <button @click="btnClick" >按</button>
+</div>
+<template id="temp">
+    <div>
+        <h2>子组件</h2>
+    </div>
+</template>
+<script type="text/javascript">
+    let mv = new  Vue({
+        el:'#app',
+        data:{
+
+        },
+        methods: {
+            btnClick() {
+                console.log(this.$children[0].name);
+                console.log(this.$refs.LM.name);
+            }
+        },
+        components: {
+            cpn: {
+                template: '#temp',
+                data() {
+                    return {
+                        name: 'LM'
+                    }
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
