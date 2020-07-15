@@ -7,7 +7,8 @@
 </head>
 <body>
 <div id="app">
-    <cpn ref="LM"></cpn>
+    <cpn1 ref="LM"></cpn1>
+    <cpn2 ></cpn2>
     <button @click="btnClick" >按</button>
 </div>
 <template id="temp">
@@ -23,19 +24,27 @@
         },
         methods: {
             btnClick() {
-                console.log(this.$children[0].name);
+                console.log(this.$children[1].name);
                 console.log(this.$refs.LM.name);
             }
         },
         components: {
-            cpn: {
+            cpn1: {
                 template: '#temp',
                 data() {
                     return {
                         name: 'LM'
                     }
                 }
-            }
+            },
+            cpn2: {
+                template: '#temp',
+                data() {
+                    return {
+                        name: 'ML'
+                    }
+                }
+            },
         }
     })
 </script>

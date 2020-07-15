@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8df44fda-fc07-47db-b005-03115e8083f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/组件化/父访问子-children、refs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/组件化/父访问子-children、refs.html" beforeDir="false" afterPath="$PROJECT_DIR$/组件化/父访问子-children、refs.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/组件化" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -115,6 +115,8 @@
       <workItem from="1593760298804" duration="18186000" />
       <workItem from="1594005233095" duration="1737000" />
       <workItem from="1594018887929" duration="2516000" />
+      <workItem from="1594179147732" duration="21000" />
+      <workItem from="1594800388078" duration="1052000" />
     </task>
     <servers />
   </component>
