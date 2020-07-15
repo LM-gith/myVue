@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <cpn>
+    </cpn>
+</div>
+<template id="temp">
+    <div>
+        <h2>子组件</h2>
+        <ccpn></ccpn>
+    </div>
+</template>
+<template id="ctemp">
+    <div>
+        <h2>孙子组件</h2>
+        <button @click="btnClick" >按</button>
+    </div>
+</template>
+<script type="text/javascript">
+    let mv = new  Vue({
+        el:'#app',
+        data:{
+            name: 'Vue'
+        },
+        components: {
+            cpn: {
+                template: '#temp',
+                data() {
+                    return {
+                        name: 'LM'
+                    }
+                },
+                components: {
+                    ccpn: {
+                        template: '#ctemp',
+                        methods: {
+                            btnClick() {
+                                console.log(this.$parent.name);//访问父组件name属性
+                                console.log(this.$root.name);//访问vue实例name
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <cpn><h2>hhh</h2></cpn>
+    <cpn><a href="#">百度</a></cpn>
+    <cpn><a href="#" slot="test">TB</a></cpn>
+    <cpn></cpn>
+
+</div>
+<template id="temp">
+    <div>
+        <h1>组件</h1>
+        <slot><button>按</button></slot><!--solt插槽，默认为按钮-->
+        <slot name="test"><h3>默认值</h3></slot><!--具名插槽-->
+    </div>
+</template>
+<script type="text/javascript">
+    let mv = new  Vue({
+        el:'#app',
+        components: {
+            cpn: {
+                template: '#temp'
+            }
+        }
+    })
+</script>
+</body>
+</html>
