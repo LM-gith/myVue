@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8df44fda-fc07-47db-b005-03115e8083f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/组件化/slot插槽.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/组件化/子访问父-parent、root.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v-for/v-for.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v-model/02-radio.html" beforeDir="false" afterPath="$PROJECT_DIR$/v-model/02-radio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue01/hellovue.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue01/hellovue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/条件判断/01.html" beforeDir="false" afterPath="$PROJECT_DIR$/条件判断/if-else.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/组件化/practice.html" beforeDir="false" afterPath="$PROJECT_DIR$/组件化/practice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/组件化/slot插槽.html" beforeDir="false" afterPath="$PROJECT_DIR$/组件化/slot插槽.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/计算属性/getter和setter.html" beforeDir="false" afterPath="$PROJECT_DIR$/计算属性/getter和setter.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +45,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\software\document\workspace\my vue" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\software\document\workspace\my vue\组件化" />
       <recent name="E:\software\document\workspace\my vue\js" />
@@ -117,7 +125,10 @@
       <workItem from="1594005233095" duration="1737000" />
       <workItem from="1594018887929" duration="2516000" />
       <workItem from="1594179147732" duration="21000" />
-      <workItem from="1594800388078" duration="5313000" />
+      <workItem from="1594800388078" duration="7107000" />
+      <workItem from="1595228882906" duration="10953000" />
+      <workItem from="1596165166923" duration="1500000" />
+      <workItem from="1596422459167" duration="8945000" />
     </task>
     <servers />
   </component>

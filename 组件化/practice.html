@@ -7,40 +7,89 @@
 </head>
 <body>
 <div id="app">
-    <cpn></cpn>
+    <!--静态-->
+    <cpn str="string-static" :num1="120" :bool="false" :arr="['黑猫警长','葫芦娃','洛洛历险记']" :obj="{name: 'LM',age: 18}"></cpn>
+    <p>----------------------------------------------</p>
+    <!--动态-->
+    <cpn :str="propsTest.str" :num1="propsTest.num" :bool="propsTest.bool" :arr="propsTest.arr" :obj="propsTest.obj"></cpn>
 </div>
 <template id="temp">
     <div>
         <button @click="decrement">-</button>
-        <p>{{num}}</p>
+        {{num}}
         <button @click="increment">+</button>
+        <p>{{str}}</p>
+        <p>{{num1}}</p>
+        <p>{{bool}}</p>
+        <p>{{arr}}</p>
+        <p>{{obj}}</p>
     </div>
 </template>
 
 
 <script type="text/javascript">
-    Vue.component('cpn',{
-        template: '#temp',
-        data() {
-            return {
-                num: 1
-            };
-        },
-        methods: {
-            increment() {
-                this.num++
-            },
-            decrement() {
-                this.num--
-            }
-        }
 
-    })
 
     let mv = new  Vue({
         el:'#app',
         data:{
-
+            propsTest: {
+                str: 'string-dynamic',
+                num: 210,
+                bool: true,
+                arr: ['大鱼海棠','齐天大圣','哪吒闹海','风语咒','天书奇谈'],
+                obj: {
+                    name: 'ZS',
+                    age: 23
+                }
+            }
+        },
+        components: {
+            cpn: {
+                template: '#temp',
+                props: {
+                    str: {
+                        type: String,
+                        default() {
+                            return 'test';
+                        }
+                    },
+                    num1: {
+                        type: Number,
+                        default() {
+                            return 1;
+                        }
+                    },
+                    bool: {
+                        type: Boolean
+                    },
+                    arr: {
+                        type: Array,
+                        default() {
+                            return [];
+                        }
+                    },
+                    obj: {
+                        type: Object,
+                        default() {
+                            return {};
+                        }
+                    }
+                },
+                data() {
+                    return {
+                        num: 1
+                    };
+                },
+                methods: {
+                    increment() {
+                        this.num++
+                    },
+                    decrement() {
+                        this.num--
+                    }
+                }
+            }
         }
     })
 </script>

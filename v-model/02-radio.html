@@ -18,6 +18,7 @@
     <h1>:{{hobbies}}</h1>
 
     <select name="水果" id="" v-model="fruit">
+        <option disabled value="">请选择</option>
         <option value="香蕉">香蕉</option>
         <option value="榴莲">榴莲</option>
         <option value="葡萄">葡萄</option>
@@ -39,7 +40,7 @@
         data:{
             sex : '女',
             hobbies : [],
-            fruit : '榴莲',
+            fruit : '',
             fruits : []
         }
     })

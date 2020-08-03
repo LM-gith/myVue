@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>11</title>
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
 </head>
 <body>
+<div id="app">
+    {{fullName}}
+</div>
 
+<script type="text/javascript">
+    let mv = new  Vue({
+        el:'#app',
+        data:{
+            firstName: 'L',
+            lastName: 'M'
+        },
+        computed: {
+            fullName:  {
+                get: function() {
+                    return this.firstName + ' ' + this.lastName;
+                },
+                set: function (fullName) {
+                    let name = fullName.split(' ');
+                    this.firstName = name[0];
+                    this.lastName = name[name.length - 1];
+                }
+            }
+        }
+
+    })
+</script>
 </body>
 </html>
