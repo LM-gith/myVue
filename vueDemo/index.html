@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="vue.js" type="text/javascript" charset="UTF-8"></script>
+	</head>
+	<body>
+		<div id="app1">
+			<p>
+			<span>{{message1}}</span>
+			<span>{{reversedmessage}}</span>
+			</p>
+			
+			<p v-bind:title="message2">
+				点我啊
+			</p>
+			
+			<p v-if="see">
+				看见
+			</p>
+			
+			<ol>
+				<li v-for="todo in todos">
+					{{todo.text}}
+				</li>
+			</ol>
+			
+			<div>
+				<p>{{message3}}</p>
+				<button v-on:click="reverse">反转消息</button>
+			</div>
+			
+			<div>
+				<p>{{message4}}</p>
+				<p v-html="message4"></p>
+			</div>
+		</div>
+		
+		
+		
+		
+		<script type="text/javascript">
+			var mv1 = new Vue({
+				el : '#app1',
+				data : {
+					message1 : 'hello',
+					message2 : new Date().toLocaleString() + '点点点',
+					message3 : 'hello world',
+					message4 : '<span style = "color:red;">显示红色</span>',
+					see : true,
+					todos : [
+						{text : '第一'},
+						{text : '第二'},
+						{text : '第三'}
+					]
+				},
+				methods : {
+					reverse : function(){
+						this.message3 = this.message3.split('').reverse().join('')
+					}
+				},
+				computed : {
+					//计算属性的getter,计算属性是基于它们的响应式依赖进行缓存的,message不变，reserveredmessage不变
+					reversedmessage : function(){
+						return this.message1.split('').reverse().join('');
+					}
+				}
+			});
+			
+			
+			
+		</script>
+	</body>
+</html>

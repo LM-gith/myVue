@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="vue.js" type="text/javascript" charset="UTF-8"></script>
+	</head>
+	<body>
+		<div id="app1">
+			{{a}}
+		</div>
+		<div id="app2">
+			<p>{{foo}}</p>
+			<button v-on:click="change">变</button>
+		</div>
+		
+		<script type="text/javascript">
+			var data = {a : 1};
+			var mv1 = new Vue({
+				el : '#app1',
+				data : data
+			});
+			mv1.$watch('a',function(newVal,oldVal){
+				console.log(newVal,oldVal);
+			})
+			mv1.a = '2222';
+			
+			var obj ={foo : 'baa aabb'};
+			Object.freeze(obj); //阻止修改现有的 property，也意味着响应系统无法再追踪变化
+			var mv2 = new Vue({
+				el : '#app2',
+				data : obj,
+				methods:{
+					change : function(){
+						this.foo = this.foo.split('').reverse().join('');
+					}
+				}
+			});
+			
+			
+		
+		</script>
+	</body>
+</html>
