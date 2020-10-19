@@ -1,6 +1,10 @@
 package com.lm.classloader;
 
 public class ClassLoadLinkTest {
+    {
+        System.out.println(1111111);
+    }
+
     public static void main(String[] args) {
         Son son = new Son();
         System.out.println("----end-----");
@@ -27,7 +31,7 @@ class Son extends Father {
 }
 
 class Father {
-    int ii;
+    int fi;
     static int fsi = 4;
     static Son son = new Son();
 
@@ -40,7 +44,7 @@ class Father {
     }
 
     Father() {
-        ii = 1;
+        fi = 1;
         System.out.println("6father constructor");
     }
 }
