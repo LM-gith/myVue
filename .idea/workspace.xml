@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8df44fda-fc07-47db-b005-03115e8083f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/JAVA（初级）－语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/MD/JAVA（初级）－语法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/basispractice/out/production/practice/META-INF/practice.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/basispractice/src/com/lm/classloader/ClassLoadLinkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/basispractice/src/com/lm/classloader/ClassLoadLinkTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +133,7 @@
       <workItem from="1595228882906" duration="10953000" />
       <workItem from="1596165166923" duration="1500000" />
       <workItem from="1596422459167" duration="9544000" />
-      <workItem from="1603094394140" duration="2906000" />
+      <workItem from="1603094394140" duration="3146000" />
     </task>
     <servers />
   </component>

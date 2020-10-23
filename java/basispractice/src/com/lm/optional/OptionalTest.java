@@ -100,7 +100,12 @@ public class OptionalTest {
     public void mapAndflatMap() {
         Address address = new Address();
         address.setCountry(new Country("11111111"));
-        Optional<String> iscode = Optional.ofNullable(address).map(address1 -> address1.getCountry()).map(country -> country.getIsocode()).map(is -> is.toUpperCase());
+   Optional.ofNullable(address).flatMap(address1 -> Optional.ofNullable(address1.getCountry()));
+
+        Optional<String> iscode = Optional.ofNullable(address)
+                .map(Address::getCountry)
+                .map(Country::getIsocode)
+                .map(String::toUpperCase);
         System.out.println(iscode);
     }
 
