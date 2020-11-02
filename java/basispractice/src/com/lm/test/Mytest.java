@@ -70,13 +70,8 @@ public class Mytest {
         System.out.println(list);
         System.out.println(student1);
 
-        switch (no) {
-            case 1:
-                System.out.println(222);
-   
-
-            default:
-                break;
+        if (no == 1) {
+            System.out.println(222);
         }
     }
 
@@ -99,7 +94,7 @@ public class Mytest {
     private void str(StringBuilder str) {
         String str1 = str.toString();
         int leng = str.length();
-        if (str.toString() == null || str.toString().equals("")) {
+        if ("".equals(str.toString())) {
             str.append("11111");
         } else {
             str.append("222");

@@ -25,9 +25,21 @@ public class ObjectTool<T> {
      * @param t
      * @param <T>
      */
-    public <T> void show(T t) {
+    public static <T> void show(T t) {
         System.out.println(t);
     }
+
+    /**
+     * 定义泛型方法..
+     *
+     * @param t
+     * @param e
+     * @param <T>
+     */
+    public static <T> T show(T t, T e) {
+        return e;
+    }
+
 
     public void show() {
         System.out.println(this.obj);
