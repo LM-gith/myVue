@@ -170,4 +170,11 @@ public class GenericTest {
     private User test() {
         return new Student();
     }
+
+    @Test
+    public void test9() {
+        // 编译正常
+        List<?>[] lsa2 = new ArrayList<?>[10];
+        System.out.println(lsa2.getClass().getName());
+    }
 }

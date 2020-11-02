@@ -21,6 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8df44fda-fc07-47db-b005-03115e8083f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/JAVA（初级）－语法.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/basispractice/out/production/practice/com/lm/generic/GenericTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/basispractice/out/production/practice/com/lm/generic/GenericTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/basispractice/out/production/practice/com/lm/optional/OptionalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/basispractice/out/production/practice/com/lm/optional/OptionalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/basispractice/out/production/practice/com/lm/test/Mytest.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/basispractice/out/production/practice/com/lm/test/Mytest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/basispractice/out/production/practice/com/lm/util/ObjectTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/basispractice/out/production/practice/com/lm/util/ObjectTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/basispractice/src/com/lm/generic/GenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/basispractice/src/com/lm/generic/GenericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/basispractice/src/com/lm/test/Mytest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/basispractice/src/com/lm/test/Mytest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/basispractice/src/com/lm/util/ObjectTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/basispractice/src/com/lm/util/ObjectTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +142,7 @@
       <workItem from="1596165166923" duration="1500000" />
       <workItem from="1596422459167" duration="9544000" />
       <workItem from="1603094394140" duration="3146000" />
+      <workItem from="1603762256743" duration="3618000" />
     </task>
     <servers />
   </component>
@@ -153,10 +162,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603094648982">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603762306767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603094648982" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603762306767" />
     <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603094502054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
