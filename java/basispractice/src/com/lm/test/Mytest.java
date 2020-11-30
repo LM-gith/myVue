@@ -1,9 +1,11 @@
 package com.lm.test;
 
 import com.lm.bean.Student;
+import com.sun.jmx.snmp.ThreadContext;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Mytest {
@@ -109,5 +111,22 @@ public class Mytest {
         student2.replace("erter", "1");
         System.out.println(student1);
         System.out.println(student2);
+    }
+
+    @Test
+    public void test8() {
+        test1 test = new test2();
+        test.test();
+    }
+
+    @Test
+    public void test9() {
+        System.out.println(ThreadContext.class.getName());
+    }
+
+    @Test
+    public void test10() {
+        String[] strings = {"11212", "dfd", "2323", "dfhgf"};
+        Arrays.asList(strings);
     }
 }

@@ -100,7 +100,7 @@ public class OptionalTest {
     public void mapAndflatMap() {
         Address address = new Address();
         address.setCountry(new Country("11111111"));
-   Optional.ofNullable(address).flatMap(address1 -> Optional.ofNullable(address1.getCountry()));
+        Optional.ofNullable(address).flatMap(address1 -> Optional.ofNullable(address1.getCountry()));
 
         Optional<String> iscode = Optional.ofNullable(address)
                 .map(Address::getCountry)

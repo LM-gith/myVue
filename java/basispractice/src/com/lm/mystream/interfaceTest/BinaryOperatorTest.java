@@ -13,11 +13,6 @@ public class BinaryOperatorTest {
 
     @Test
     public void testBinaryOperatorTest() {
-        BinaryOperator<String> binaryOperator = new BinaryOperator<String>() {
-            @Override
-            public String apply(String s, String s2) {
-                return null;
-            }
-        };
+        BinaryOperator<String> binaryOperator = (s, s2) -> null;
     }
 }

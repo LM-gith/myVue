@@ -26,7 +26,7 @@ public class JieCheng {
         System.out.println("阶乘结果位数和: " + sum);
         System.out.println("程序运行时间: " + (endTime - bigTime) + "ms");
     }
-    
+
     private static BigInteger[] doBigFactorial() throws ExecutionException, InterruptedException {
         ExecutorService service = Executors.newFixedThreadPool(10);
         BigInteger[] bigIntegers = new BigInteger[5];
